@@ -1,0 +1,18 @@
+name = "release-reminder-worker"
+main = "src/index.ts"
+compatibility_date = "2024-06-03"
+
+workers_dev = false
+
+# Cron Triggers
+# Docs: https://developers.cloudflare.com/workers/platform/triggers/cron-triggers/
+# Configuration: https://developers.cloudflare.com/workers/wrangler/configuration/#triggers
+[triggers]
+crons = ["0 1 * * 2-6"] # 日本時間の平日朝10時に実行
+
+[vars]
+# `名前:Slack ID`の形式で改行区切りで指定する
+MEMBER_SLACK_IDS = """
+example1:UXXXXXXXXXX
+example2:UXXXXXXXXXX
+"""
