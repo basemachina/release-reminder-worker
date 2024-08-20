@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "es2021" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
+    "lib": [
+      "es2021"
+    ] /* Specify a set of bundled library declaration files that describe the target runtime environment. */,
+    "jsx": "react" /* Specify what JSX code is generated. */,
+
+    /* Modules */
+    "module": "es2022" /* Specify what module code is generated. */,
+    "moduleResolution": "node" /* Specify how TypeScript looks up a file from a given module specifier. */,
+    "types": [
+      "@cloudflare/workers-types/2023-07-01"
+    ] /* Specify type package names to be included without being referenced in a source file. */,
+    "resolveJsonModule": true /* Enable importing .json files */,
+
+    // strictest config
+    // see: https://github.com/tsconfig/bases/blob/bb30eb342007a5fe4a45a5af9cf28868bde5ae53/bases/strictest.json
+    "strict": true,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    "isolatedModules": true,
+
+    "checkJs": true,
+
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "exclude": ["node_modules", "eslintrc.cjs"]
+}
