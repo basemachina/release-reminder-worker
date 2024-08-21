@@ -8,7 +8,7 @@ workers_dev = false
 # Docs: https://developers.cloudflare.com/workers/platform/triggers/cron-triggers/
 # Configuration: https://developers.cloudflare.com/workers/wrangler/configuration/#triggers
 [triggers]
-crons = ["0 1 * * 2-6"] # 日本時間の平日朝10時に実行
+crons = ["0 1 * * MON-THU"] # 日本時間の月〜木の朝10時に実行
 
 [vars]
 # `名前:Slack ID`の形式で改行区切りで指定する
